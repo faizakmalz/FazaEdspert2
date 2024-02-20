@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edspert Final Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="container flex flex-col mx-auto font-['Inter'] max-w-[1440px]">
+        <header id="headernav" class="fixed w-full h-[80px] bg-white shadow-lg">
+            <div class="flex flex-row mx-[80px] my-[18px] justify-between">
+                <div class=" flex flex-row items-center">
+                    <div class="flex flex-row w-[150px] mx-px-20 pr-[30px]">
+                        <img src="https://s3-alpha-sig.figma.com/img/ec19/eb11/bd1f6844c704ca24fd7d0d63a54c1259?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QmmkWvEcsiCymHL6PfEnrjxT-q0RKvlweadT7tQUM0rhTJkWLGw5Vgx2k6lTVblpeqxCdrLwg-v4klf-PQwnmAe85je-93GgZWhh8Eac~F17G6tUvxnzIrQqtAGIJiPb94-xrRyNV0SduLTn4NXuUSXfr8KERu0WVG~kj5ciY3km1Ex3stxJULhZX0iSMWmP1NAmtgkeUJrQkUoIvIHyCufZ7ZIko83Wp9JSJOZGtfU-PtNVmLbc8WOXknL5AR3VkdkNG-UTuItOEpsx~EkolEqZQ0SYcBNTKceQ~QtpvGTIV3NbeYD9XAW59~XktepimzkvDrdYmYN-tvQRe~wLlg__"
+                        alt="Logo edspert" class="w-full">
+                    </div>
+                    <div class="flex flex-row">
+                        <ul class="flex flex-row mx-8 gap-8 text-gray-900 font-['poppins'] relative">
+                            <li class="dropdown">
+                                <a class="hover:text-purple-500" href="#" onclick="toggleDropdown('dropdown1')">Home</a>
+                                <div id="dropdown1"  class= "transition-all hidden fixed bg-white shadow-lg rounded-[16px]">
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 1</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 2</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 3</a>
+                                </div>
+                            </li>
+                            <li class="dropdown flex gap-2">
+                                <a href="#" class="hover:text-purple-500" onclick="toggleDropdown('dropdown2')">Products</a>
+                                <img class="w-[10px] h-[10px] mt-2" src="/img/icon/chevron-down.png" alt="">
+                                <div id="dropdown2" class="dropdown-content hidden absolute bg-white shadow-lg rounded-[16px]">
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 1</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 2</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 3</a>
+                                </div>
+                            
+                               
+                            </li>
+                            <li class="dropdown flex gap-2">
+                                <a href="#" class="hover:text-purple-500" onclick="toggleDropdown('dropdown3')">Resources</a>
+                                <img class="w-[10px] h-[10px] mt-2" src="/img/icon/chevron-down.png"/>
+                                <div id="dropdown3" class="dropdown-content hidden absolute bg-white shadow-lg rounded-[16px]">
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 1</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 2</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 3</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="hover:text-purple-500" onclick="toggleDropdown('dropdown4')">Pricing</a>
+                                <div id="dropdown4" class="dropdown-content hidden absolute bg-white shadow-lg rounded-[16px]">
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 1</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 2</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 3</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-5 items-center ">
+                    <button class="transition-all text-[#7F56D9] rounded-[12px] hover:bg-purple-100 px-6 py-[10px] border-2 border-gray-200 w-[120px] font-semibold">Sign Up</button>
+                        <button class="transition-all text-base rounded-[12px] bg-[#7F56D9] hover:bg-purple-800  px-6 py-[10px] text-white w-[120px]  border-2 border-gray-200 font-semibold">Login</button>
+                </div>
+            </div>   
+        </header>
+
+    <main class="max-w-[1440px]">
+
+        <div id="blank" class="h-[80px] w-full max-w-[1440px]"></div>
+
+        <div id="metrics-section" class=" h-[752px] max-w-[1440px]">
+            <div class="container w-[90%] h-[560px] px-[32px] flex mx-20 my-24 gap-5">
+                <img src="https://s3-alpha-sig.figma.com/img/e064/a399/5779e0370c30d28353e3e537a24c48da?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=geKgpiZc8kHhtDYRrnibGUfGgeJDqPvU5f1rblS75aro1SgZDSQS6bPu4uDinn4BeUD-aSIACNNUCAMpiMikEyQTGfdazC1m-IX38Stpp5cdWPOAoAMbzOaSGRcntVe4WakkFrB12rWj9DS5KM05KNipw6VufJZ6rNwJI~s0eSxA3XvyGaj5ZoZl0zamv3MGDXpW519GDnnyh3wdwLi8Smfxw7Gc6hKr5ubdcupdnNXn2dN8lG6SlRGQedKnXX8TnZuQbLbGvtKlLxisB33c6zl1JC3Hj4wRsXcRbvXKNGIiTk3G~GUI3Qq8WLWm-UC-asdR9ITYP7k2hGn5DKBFkw__"
+                 alt="" class="w-[560px] h-[560px]">
+                <div class="content my-[34px] ml-16 mr-8 flex-col flex gap-3">
+                    <h4 class="text-[#6941C6] font-semibold">Intensive Bootcamp</h4>
+                    <h1 class="text-[48px] leading-[50px]">Web Development<br><b>Bootcamp</b></h1>
+                    <div id="metrics" class="grid grid-rows-2 grid-flow-col grid-col-2 gap-5 mt-4">
+                        <div>
+                            <h2 class="text-[60px] text-[#7F56D9] font-semibold">400+</h2>
+                            <p>Portofolio Siswa</p>
+                        </div>
+                        <div>
+                            <h2 class="text-[60px] text-[#7F56D9] font-semibold">10k</h2>
+                            <p>Anggota Komunitas</p>
+                        </div>
+                        <div>
+                            <h2 class="text-[60px] text-[#7F56D9] font-semibold">80%</h2>
+                            <p>Alumni diterima kerja</p>
+                        </div>
+                        <div>
+                            <h2 class="text-[60px] text-[#7F56D9] font-semibold">2000+</h2>
+                            <p>Testimoni</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="mentor-section" class="h-[1046px] overflow-hidden">
+            <div class="container bg-white container w-[100%] h-[1046px] px-[32px] flex flex-col my-24 gap-1 text-center">
+                <h1 class="text-[36px] font-bold">Mentor</h1>
+                <p>Dipandu oleh Mentor Terbaik Kami</p>
+                <div id="mentors" class="my-20 grid grid-rows-2 grid-cols-4 gap-12 mx-8">
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img/avatar/kajen.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Agnes Amanta</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">Founder & CEO</h3>
+                        <p class="font-regular text-[#667085]">Former co-Founder of Opendoor, Early staff at Spotify and Clearbit</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img/avatar/kajen.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Kajen Permadi</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">Engineering Manager</h3>
+                        <p class="font-regular text-[#667085]">Lead engineering teams at Digma, Pirch, and protocol Labs.</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img/avatar/natsir.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Natsir Naradi</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">Product Manager</h3>
+                        <p class="font-regular text-[#667085]">Former PM for Linear, Lambda Schoolm and On Deck</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img/avatar/rahimah.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Rahimah Gilda</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">Frontend Developer</h3>
+                        <p class="font-regular text-[#667085]">Former frontend dev for Linear, Coinbase, and Postscript.</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img/avatar/suartini.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Suartini Novi</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">Backend Developer</h3>
+                        <p class="font-regular text-[#667085]">Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img/avatar/hannah.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Hannah Airlangga</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">Product Designer</h3>
+                        <p class="font-regular text-[#667085]">Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img//avatar/firman.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Firman Kurniawan</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">UX Researcher</h3>
+                        <p class="font-regular text-[#667085]">Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container bg-[#f9fafb] p-8 w-[280px] h-[316px] flex flex-col  items-center ">
+                        <img src="/img/avatar/mario.png" alt="" class="w-[80px]">
+                        <h2 class="text-18px font-semibold mt-3">Mario Agustinus</h2>
+                        <h3 class="text-[16px] mb-3 text-purple-500">Customer Success</h3>
+                        <p class="font-regular text-[#667085]">Lead CX at Wealthsimple. Former Pagerduty and Sqreen.</p>
+                        <div class="social-media-icons flex p-4 gap-3">
+                            <img class="w-[20px]" src="/img/icon/Vectortwitter.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                            <img class="w-[20px]" src="/img/icon/Vectorsocmed.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fasilitas-section" class="h-[600px] my-24">
+            <div class="container container w-[100%] h-[1046px] px-[32px] flex flex-col gap-1 text-center">
+                <h1 class="text-[36px] font-bold">Fasilitas</h1>
+                <p>Pengalaman Bootcamp Terbaik untuk Kamu!</p>
+                <div id="mentors" class="my-10 grid grid-rows-2 grid-cols-3 gap-12 mx-auto" >
+                    <div class="container p-4 w-[354px] h-[200px] flex flex-col items-center rounded-[12px] ">
+                        <img src="/img/icon/Featured Icon Community.png" alt="">
+                        <h2 class="text-[20px] font-semibold my-3">Komunitas</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+                    </div>
+                    <div class="container p-4 w-[354px] h-[200px] flex flex-col items-center rounded-[12px] ">
+                        <img src="/img/icon/Featured iconheart.png" alt="">
+                        <h2 class="text-[20px] font-semibold my-3">1-on-1 Session</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+                    </div>
+                    <div class="container p-4 w-[354px] h-[200px] flex flex-col items-center rounded-[12px] ">
+                        <img src="/img/icon/Featured iconactive.png" alt="">
+                        <h2 class="text-[20px] font-semibold my-3">Active Learning</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+                    </div>
+                    <div class="container p-4 w-[354px] h-[200px] flex flex-col items-center rounded-[12px] ">
+                        <img src="/img/icon/Featured iconhappy.png" alt="">
+                        <h2 class="text-[20px] font-semibold my-3">Happy Atmosphere</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+                    </div>
+                    <div class="container p-4 w-[354px] h-[200px] flex flex-col items-center rounded-[12px] ">
+                        <img src="/img/icon/Featured iconflag.png" alt="">
+                        <h2 class="text-[20px] font-semibold my-3">Tugas</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+                    </div>
+                    <div class="container p-4 w-[354px] h-[200px] flex flex-col items-center rounded-[12px] ">
+                        <img src="/img/icon/Featured iconflash.png" alt="">
+                        <h2 class="text-[20px] font-semibold my-3">Intensive Bootcamp</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="materi-section" class="h-[700px] overflow-hidden my-20">
+            <div class="container container w-[100%] h-[100%] px-[32px] flex flex-col gap-1">
+                <h1 class="text-[36px] ml-56 font-bold">Materi</h1>
+                <p class="ml-56">Pengalaman Bootcamp Terbaik untuk Kamu!</p>
+                <div id="materials" class="my-10 flex flex-col gap-5 mx-auto items-center" >
+                    <div class="container p-4 w-[768px] h-[112px] flex flex-col mt-2 rounded-[12px] border-gray-200 border-2 justify-center">
+                        <h2 class="text-[20px] font-semibold">Introduction to Web Development</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                    </div>
+                    <div class="container p-4 w-[768px] h-[112px] flex flex-col mt-2 rounded-[12px] border-gray-200 border-2 justify-center">
+                        <h2 class="text-[20px] font-semibold">Introduction to Web Development</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                    </div>
+                    <div class="container p-4 w-[768px] h-[112px] flex flex-col mt-2 rounded-[12px] border-gray-200 border-2 justify-center">
+                        <h2 class="text-[20px] font-semibold">Introduction to Web Development</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                    </div>
+                    <div class="container p-4 w-[768px] h-[112px] flex flex-col mt-2 rounded-[12px] border-gray-200 border-2 justify-center">
+                        <h2 class="text-[20px] font-semibold">Introduction to Web Development</h2>
+                        <p class="font-regular text-[14px] text-[#667085]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex flex-col">
+            <div class="container h-[149px] flex items-center justify-center mx-auto px-32">
+                <div class="flex-1">
+                    <h2 class="font-semibold text-[24px]">Daftar kelas sekarang</h2>
+                    <p>Join over 10.000+ students already growing with Edspert!</p>
+                </div>
+                <div class="buttons flex gap-5 text-right">
+                    <button class="transition-all text-base rounded-[12px]  hover:bg-purple-100 px-6 py-[10px] border-2 border-gray-200 w-[190px] font-semibold">Hubungi CS</button>
+                        <button class="transition-all text-base rounded-[12px] bg-[#7F56D9] hover:bg-purple-800  px-6 py-[10px] text-white w-[190px] border-2 border-gray-200 font-semibold">Daftar Sekarang!</button>
+                </div>
+            </div>
+            <div class="flex p-24 gap-12 justify-between">
+                <div class="flex-1 flex flex-col gap-5 items-center mt-8">
+                    <img src="https://s3-alpha-sig.figma.com/img/ec19/eb11/bd1f6844c704ca24fd7d0d63a54c1259?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QmmkWvEcsiCymHL6PfEnrjxT-q0RKvlweadT7tQUM0rhTJkWLGw5Vgx2k6lTVblpeqxCdrLwg-v4klf-PQwnmAe85je-93GgZWhh8Eac~F17G6tUvxnzIrQqtAGIJiPb94-xrRyNV0SduLTn4NXuUSXfr8KERu0WVG~kj5ciY3km1Ex3stxJULhZX0iSMWmP1NAmtgkeUJrQkUoIvIHyCufZ7ZIko83Wp9JSJOZGtfU-PtNVmLbc8WOXknL5AR3VkdkNG-UTuItOEpsx~EkolEqZQ0SYcBNTKceQ~QtpvGTIV3NbeYD9XAW59~XktepimzkvDrdYmYN-tvQRe~wLlg__
+                    " alt="">
+                    <h3 class="text-[12px] text-[#667085]">Design amazing digital experiences that create more happy in the world.</h3>
+                </div>
+                <div class="flex-1 flex">
+                    <div class="flex flex-col p-8 gap-3 justify-center">
+                        <h2 class="text-black font-bold text-[18px]">Product</h2>
+                        <h3>Overview</h3>
+                        <h3>Features</h3>
+                        <h3>Solutions</h3>
+                        <h3>Tutorials</h3>
+                        <h3>Pricing</h3>
+                        <h3>Releases</h3>
+                    </div>
+                    <div class="flex flex-col p-8 gap-3 justify-center">
+                        <h2 class="text-black font-bold text-[18px]">Company</h2>
+                        <h3>About us</h3>
+                        <h3>Careers</h3>
+                        <h3>Press</h3>
+                        <h3>News</h3>
+                        <h3>Media Kit</h3>
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="flex flex-col p-8 gap-3 justify-center">
+                        <h2 class="text-black font-bold text-[18px]">Resources</h2>
+                        <h3>Blog</h3>
+                        <h3>Newsletter</h3>
+                        <h3>Events</h3>
+                        <h3>Help Centre</h3>
+                        <h3>Tutorials</h3>
+                        <h3>Support</h3>
+                    </div>
+                    <div class="flex flex-col p-8 gap-3 justify-center">
+                        <h2 class="text-black font-bold text-[18px]">Use Cases</h2>
+                        <h3>Startups</h3>
+                        <h3>Enterprise</h3>
+                        <h3>Government</h3>
+                        <h3>SaaS</h3>
+                        <h3>Marketplace</h3>
+                        <h3>Ecommerce</h3>
+                    </div>
+                    <div class="flex flex-col p-8 gap-3 justify-center">
+                        <h2 class="text-black font-bold text-[18px]">Social</h2>
+                        <h3>Twitter</h3>
+                        <h3>LinkedIn</h3>
+                        <h3>Facebook</h3>
+                        <h3>GitHub</h3>
+                        <h3>AngelList</h3>
+                        <h3>Dribble</h3>
+                    </div>
+                    <div class="flex flex-col p-8 gap-3 justify-center">
+                        <h2 class="text-black font-bold text-[18px]">Legal</h2>
+                        <h3>Terms</h3>
+                        <h3>Privacy</h3>
+                        <h3>Cookies</h3>
+                        <h3>License</h3>
+                        <h3>Setting</h3>
+                        <h3>Contact</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex h-[200px] items-center justify-between mx-28">
+            <h3 class="text-[#667085]">2077 Untitled UI. All rights reserved.</h3>
+            <div class="icons flex gap-2">
+                <img class="w-[25px]" src="/img/icon/Vectortwitter.png" alt="">
+                <img class="w-[25px]" src="/img/icon/Vectorlinkedin.png" alt="">
+                <img class="w-[25px]" src="/img/icon/Social iconfacebook.png" alt="">
+                <img class="w-[25px]" src="/img/icon/Social icongithub.png" alt="">
+                <img class="w-[25px]" src="/img/icon/Social icontwice.png" alt="">
+                <img class="w-[25px]" src="/img/icon/Vectorsocmed.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
